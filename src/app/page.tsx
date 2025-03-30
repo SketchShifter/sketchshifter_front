@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import HomeGallery from '@/components/home-gallery';
+import Top from '@/components/top/Top';
 
 export default function HomePage() {
   const [data, setData] = useState([] as any);
@@ -16,9 +17,10 @@ export default function HomePage() {
     fetchData();
   }, []);
 
-  return (
-    <div>
+  return (<>
+    <Top />
+    <div className="mt-4">
       <HomeGallery data={data} />
     </div>
-  );
+  </>);
 }
