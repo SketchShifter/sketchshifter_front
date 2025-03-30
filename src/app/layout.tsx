@@ -11,7 +11,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
         <header className='fixed z-997 w-screen'>
           <TopBar />
         </header>
-        <main className="bg-gray-50 min-h-screen pt-20">
+        <main className="bg-gray-50 min-h-screen pt-18">
           <ToastContainer />
           <div>
             {children}
